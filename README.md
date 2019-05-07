@@ -27,3 +27,7 @@ Styling for css includes less, but sass could be hit or miss.
 #### json
 
 ![showcase-json](https://github.com/CraigglesO/tesselate-syntax/blob/master/showcase/json.png?raw=true)
+
+#### jsx (React)
+
+![showcase-json](https://github.com/CraigglesO/tesselate-syntax/blob/master/showcase/react.png?raw=true)
