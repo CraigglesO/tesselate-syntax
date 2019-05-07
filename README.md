@@ -22,8 +22,8 @@ Styling for css includes less, but sass could be hit or miss.
 
 #### css
 
-![showcase-json](https://github.com/CraigglesO/tesselate-syntax/blob/master/shocase/css.png?raw=true)
+![showcase-json](https://github.com/CraigglesO/tesselate-syntax/blob/master/showcase/css.png?raw=true)
 
 #### json
 
-![showcase-json](https://github.com/CraigglesO/tesselate-syntax/blob/master/shocase/json.png?raw=true)
+![showcase-json](https://github.com/CraigglesO/tesselate-syntax/blob/master/showcase/json.png?raw=true)
