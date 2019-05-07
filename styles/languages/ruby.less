@@ -1,0 +1,35 @@
+.syntax--source.syntax--ruby {
+  .syntax--string.syntax--double.syntax--quoted {
+    .syntax--embedded {
+      color: @string-alt;
+    }
+  }
+  .syntax--punctuation.syntax--separator.syntax--variable,
+  .syntax--variable.syntax--block {
+    color: @accent-1;
+  }
+  .syntax--variable.syntax--instance {
+    color: @accent-2;
+    .syntax--punctuation.syntax--definition {
+      color: @accent-2-alt;
+    }
+  }
+  .syntax--punctuation.syntax--inheritance {
+    color: @accent-1;
+  }
+  .syntax--constant.syntax--symbol {
+    color: @string;
+    .syntax--punctuation.syntax--definition {
+      color: @string-alt;
+    }
+  }
+  .syntax--keyword.syntax--other.syntax--special-method {
+    color: @accent-1;
+  }
+}
+
+/*
+  ┌───────────┐
+  │ tesselate │
+  └───────────┘
+*/

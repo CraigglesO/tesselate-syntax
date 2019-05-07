@@ -1,0 +1,51 @@
+.syntax--source.syntax--java {
+  .syntax--meta {
+    &.syntax--class.syntax--identifier,
+    &.syntax--class.syntax--inherited.syntax--classes,
+    &.syntax--class.syntax--implemented.syntax--interfaces {
+      .syntax--storage.syntax--modifier {
+        color: @keyword;
+      }
+    }
+    &.syntax--method {
+      &.syntax--return-type,
+      &.syntax--identifier {
+        .syntax--parameter {
+          color: @syntax-text-color;
+        }
+      }
+    }
+  }
+  .syntax--storage {
+    &.syntax--modifier {
+      color: @accent-1;
+      &.syntax--package,
+      &.syntax--import {
+        color: @syntax-text-color;
+      }
+    }
+    &.syntax--type {
+      color: @string-alt;
+      &.syntax--annotation {
+        color: @accent-2;
+      }
+      &.syntax--generic {
+        color: @string;
+      }
+    }
+  }
+  .syntax--keyword {
+    &.syntax--other {
+      &.syntax--import,
+      &.syntax--package {
+        color: @accent-2;
+      }
+    }
+  }
+}
+
+/*
+  ┌───────────┐
+  │ tesselate │
+  └───────────┘
+*/

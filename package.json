@@ -1,0 +1,17 @@
+{
+  "name": "tesselate-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "A darker syntax theme for the more artistic folk",
+  "keywords": [
+    "syntax",
+    "theme",
+    "dark",
+    "tesselate"
+  ],
+  "repository": "https://github.com/CraigglesO/tesselate-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

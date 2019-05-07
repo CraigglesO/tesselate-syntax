@@ -1,0 +1,50 @@
+.syntax--meta {
+  &.syntax--function,
+  .syntax--function.syntax--arrow {
+    .syntax--variable.syntax--other.syntax--readwrite {
+      color: @accent-3-alt;
+    }
+  }
+  &.syntax--function-call {
+    .syntax--entity.syntax--name.syntax--function {
+      color: @foreground;
+    }
+    .syntax--punctuation.syntax--definition.syntax--parameters {
+      color: @accent-3;//@foreground;
+    }
+  }
+  &.syntax--embedded.syntax--expression {
+    .syntax--punctuation.syntax--embedded,
+    .syntax--variable {
+      color: @foreground-alt;
+    }
+    .syntax--keyword.syntax--operator.syntax--ternary {
+      color: @accent-3-alt;
+    }
+  }
+}
+
+.syntax--support.syntax--object.syntax--node {
+  color: @accent-1;
+}
+
+.syntax--object.syntax--key .syntax--string.syntax--unquoted {
+  color: @foreground-alt;
+}
+
+.syntax--entity.syntax--quasi.syntax--element {
+  .syntax--variable,
+  .syntax--punctuation {
+    color: @string-alt;
+  }
+}
+
+.syntax--keyword.syntax--control.syntax--module {
+  color: @accent-1;
+}
+
+/*
+  ┌───────────┐
+  │ tesselate │
+  └───────────┘
+*/

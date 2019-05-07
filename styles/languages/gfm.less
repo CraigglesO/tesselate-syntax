@@ -1,0 +1,65 @@
+.colorize-headings(@n: 1) when(@n <= 6) {
+  .syntax--markup.syntax--heading.syntax--heading-@{n} {
+    color: spin(@keyword, 40 * (@n - 1));
+  }
+  .colorize-headings(@n + 1);
+}
+
+.syntax--source.syntax--gfm {
+  .colorize-headings;
+  .syntax--link {
+    color: @accent-1-alt;
+  }
+  .syntax--list {
+    color: @accent-3;
+  }
+  .syntax--support{
+    background: @muted;
+    color: @background;
+    border-radius: 3px;
+  }
+  .syntax--quote {
+    color: @syntax-text-color;
+    .syntax--support {
+      color: @background;
+      border-radius: 0;
+    }
+  }
+  .syntax--table {
+    .syntax--border.syntax--pipe,
+    .syntax--border.syntax--header {
+      color: @accent-3;
+    }
+    .syntax--border.syntax--alignment {
+      color: @accent-3;
+    }
+  }
+  .syntax--markup {
+  -webkit-font-smoothing: auto;
+    &.syntax--link {
+      color: @accent-3;
+    }
+    &.syntax--bold {
+      color: @syntax-text-color;
+      font-weight: bold;
+    }
+    &.syntax--italic {
+      color: @syntax-text-color;
+      font-style: italic;
+    }
+    &.syntax--strike {
+      text-decoration: line-through;
+    }
+    &.syntax--raw {
+      background: fadeout(darken(@background, 15%), 65%);
+      border: 1px solid black;
+      border-radius: 6px;
+    }
+  }
+}
+
+/*
+  ┌───────────┐
+  │ tesselate │
+  └───────────┘
+*/

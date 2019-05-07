@@ -1,0 +1,42 @@
+.syntax--source.syntax--json {
+  .syntax--meta.syntax--structure.syntax--dictionary {
+    .syntax--string {
+      color: @string;
+    }
+    .syntax--punctuation.syntax--definition {
+      color: @string-alt;
+      &.syntax--dictionary,
+      &.syntax--array {
+        color: @foreground;
+      }
+    }
+
+    .syntax--dictionary.syntax--value {
+      .syntax--string {
+        color: @accent-3;
+        .syntax--punctuation.syntax--definition {
+          color: @accent-3-alt;
+        }
+      }
+      .syntax--dictionary {
+        .syntax--string {
+          color: @string;
+          .syntax--punctuation.syntax--definition {
+            color: @string-alt;
+          }
+        }
+        .syntax--dictionary.syntax--value {
+          .syntax--string {
+            color: @accent-3;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+  ┌───────────┐
+  │ tesselate │
+  └───────────┘
+*/

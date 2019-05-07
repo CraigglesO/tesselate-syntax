@@ -1,0 +1,38 @@
+.syntax--source.syntax--js {
+  .syntax--meta {
+    &.syntax--import,
+    &.syntax--export {
+      .syntax--keyword.syntax--control {
+        color: @accent-1;
+      }
+    }
+    &.syntax--method-call {
+      .syntax--entity.syntax--name.syntax--function {
+        color: @foreground;
+      }
+    }
+  }
+  .syntax--variable.syntax--default {
+    color: @accent-1;
+  }
+  .syntax--storage {
+    color: @keyword;
+  }
+  .syntax--string.syntax--template {
+    .syntax--embedded {
+      &,
+      &.syntax--punctuation,
+      .syntax--constant,
+      .syntax--variable,
+      .syntax--keyword.syntax--operator {
+        color: @string-alt;
+      }
+    }
+  }
+}
+
+/*
+  ┌───────────┐
+  │ tesselate │
+  └───────────┘
+*/

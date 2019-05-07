@@ -1,0 +1,21 @@
+.syntax--entity {
+  &.syntax--name.syntax--tag {
+    color: @accent-3;
+    .syntax--string {
+      color: @string;
+    }
+  }
+}
+
+.syntax--punctuation.syntax--definition.syntax--tag {
+  color: @accent-3-alt;
+  .syntax--sgml & {
+    color: @syntax-text-color;
+  }
+}
+
+/*
+  ┌───────────┐
+  │ tesselate │
+  └───────────┘
+*/
